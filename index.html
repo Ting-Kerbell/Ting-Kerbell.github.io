@@ -1,1 +1,155 @@
-Hello
+<!DOCTYPE html>
+<html>
+<title>Darren Ting's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+    <div class="w3-row">
+    <div class="w3-col w3-center w3-padding-large">
+      <img src="img/avatar.jpg" class="w3-circle w3-image" alt="Photo of Me" width="250" height="150">
+    </div>
+
+  </div>
+  <p class="w3-center"><em>I'm an incoming software engineer at Amazon with an interest in Full Stack technology as well as data science. Apart from tech, I love photography, playing drums and playing tennis.</em></p>
+  <p>I’m a current Master's of Engineering Student at Cornell University, studying Computer Science in the scope of Machine Learning, Data Science and Software Engineering. My undergraduate education was at Tufts University, where I majored in Computer Science and Quantitative Economics. Over the past few years, I’ve had the opportunity in interning and developing production software in notable companies and learning the accompanying business processes. My interests lie with Machine Learning and Data Science, and the vast number of global applications these skills may be applied to improve the lives of people and organizations. </p>
+
+    <p><b><i class="fa fa-smile-o w3-margin-right"></i>Thanks for checking out my website!</b></p><br>
+
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Activity</span>
+  </div>
+</div>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">RESUME</h3>
+  <object data="TING_Darren_RESUME.pdf" type="application/pdf" width="100%" height="800vw">
+  <p>Download <a href="TING_Darren_RESUME.pdf"> here!</a></p>
+	</object>
+
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Contact Me!</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 973-908-2217<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: darrenting1@gmail.com<br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Linkedin: <a href="https://www.linkedin.com/in/darren-marcus-ting/">darren-marcus-ting</a><br>
+        <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> GitHub: <a href="https://github.com/Ting-Kerbell">Ting-Kerbell</a><br>
+        <i class="fa fa-sticky-note fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Medium: <a href="https://dting01.medium.com/">Darren Ting</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
