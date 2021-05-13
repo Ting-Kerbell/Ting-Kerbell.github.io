@@ -24,7 +24,10 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+iframe {
+    display:block;
+    width:100%;
+}
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("img/water.jpg");
